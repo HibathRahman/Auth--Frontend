@@ -27,7 +27,7 @@ const Login = () => {
         e.preventDefault();
         console.log(formData);
         try{
-            const response = await axios.post(`${API_URL}/login/verify`, formData)
+            const response = await axios.post(`${API_URL}login/verify`, formData)
            console.log(response);
 
            if(response.data === "Invalid UserName or Password"){
